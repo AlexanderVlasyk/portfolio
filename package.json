@@ -8,7 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "compile:sass": "node-sass src/assets/style.scss src/style.css -w"
+    "compile:sass": "node-sass src/assets/style.scss src/style.css -w",
+    "deploy": "ng build --prod --base-href
+   https://alexandervlasyk.github.io/portfolio_alex/ && angular-cli-ghpages --branch 
+   gh-pages"
   },
   "private": true,
   "dependencies": {
